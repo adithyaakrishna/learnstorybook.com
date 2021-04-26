@@ -5,7 +5,7 @@ import { Link, styles } from '@storybook/design-system';
 import storybookLogo from '../../../static/storybook-logo.svg';
 import storybookLogoInverted from '../../../static/storybook-logo-inverted.svg';
 // eslint-disable-next-line
-import siteMetadata from '../../../site-metadata';
+// import siteMetadata from '../../../site-metadata';
 
 const { typography, color, breakpoint } = styles;
 
@@ -51,9 +51,9 @@ const LogoStorybook = ({ inverse }) => (
     <LogotypeWrapper href="https://storybook.js.org/">
       <img src={inverse ? storybookLogoInverted : storybookLogo} alt="Storybook" />
     </LogotypeWrapper>
-    <Version href="https://github.com/storybookjs/storybook/releases" inverse={inverse}>
+    {/* <Version href="https://github.com/storybookjs/storybook/releases" inverse={inverse}>
       {siteMetadata.latestVersion}
-    </Version>
+    </Version> */}
   </LogoWrapper>
 );
 

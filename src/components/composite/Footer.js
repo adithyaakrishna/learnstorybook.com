@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { Link as GatsbyLink, withPrefix } from 'gatsby';
 import { Icon, Link, Subheading, styles } from '@storybook/design-system';
 // eslint-disable-next-line
-import siteMetadata from '../../../site-metadata';
+// import siteMetadata from '../../../site-metadata';
 import MailingListSignup from './MailingListSignup';
 
 const { background, color, typography, pageMargins, pageMargin, spacing, breakpoint } = styles;
@@ -302,18 +302,18 @@ LinkWrapper.propTypes = {
   isGatsby: PropTypes.bool.isRequired,
 };
 
-const { urls = {}, coreFrameworks } = siteMetadata;
-const { twitter, chat, youtube, navLinks = {}, gitHub = {} } = urls;
+// const { urls = {}, coreFrameworks } = siteMetadata;
+// const { twitter, chat, youtube, navLinks = {}, gitHub = {} } = urls;
 
 const frontpageUrl = 'https://storybook.js.org';
 
-const absoluteNavLinks = navLinks.map(link => {
-  return {
-    title: link.title,
-    href: link.isGatsby ? `${frontpageUrl}${link.href}` : link.href,
-    isGatsby: false,
-  };
-});
+// const absoluteNavLinks = navLinks.map(link => {
+//   return {
+//     title: link.title,
+//     href: link.isGatsby ? `${frontpageUrl}${link.href}` : link.href,
+//     isGatsby: false,
+//   };
+// });
 
 const Footer = ({ ...props }) => (
   <FooterWrapper {...props}>
@@ -328,7 +328,7 @@ const Footer = ({ ...props }) => (
                 Add Storybook to your project in less than a minute to build components faster and
                 easier.
               </ResourceDesc>
-              <ResourceActions>
+              {/* <ResourceActions>
                 {coreFrameworks.map(framework => (
                   <ResourceAction
                     withArrow
@@ -338,7 +338,7 @@ const Footer = ({ ...props }) => (
                     {framework}
                   </ResourceAction>
                 ))}
-              </ResourceActions>
+              </ResourceActions> */}
             </Meta>
           </Resource>
         </Resources>
@@ -376,7 +376,7 @@ const Footer = ({ ...props }) => (
           and the awesome Storybook community.
         </Text>
       </Colophon>
-      <Column>
+      {/* <Column>
         <Title>Storybook</Title>
         {absoluteNavLinks.map(({ title, href, isGatsby }) => (
           <FooterLink
@@ -389,8 +389,8 @@ const Footer = ({ ...props }) => (
             {title}
           </FooterLink>
         ))}
-      </Column>
-      <Column>
+      </Column> */}
+      {/* <Column>
         <Title>Community</Title>
         <FooterLink tertiary href={gitHub.repo}>
           <Icon icon="github" /> GitHub
@@ -404,7 +404,7 @@ const Footer = ({ ...props }) => (
         <FooterLink tertiary href={youtube}>
           <Icon icon="youtube" /> Youtube
         </FooterLink>
-      </Column>
+      </Column> */}
       <Subscribe>
         <Title>Subscribe</Title>
         <Text>Get news, free tutorials, and Storybook tips emailed to you.</Text>

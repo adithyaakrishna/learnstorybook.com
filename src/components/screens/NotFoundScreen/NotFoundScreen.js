@@ -7,7 +7,7 @@ import PageTitle from './PageTitle';
 import GitHubSVG from '../../../../static/github.svg';
 import DiscordSVG from '../../../../static/discord.svg';
 // eslint-disable-next-line
-import siteMetadata from '../../../../site-metadata';
+// import siteMetadata from '../../../../site-metadata';
 
 const { breakpoint } = styles;
 
@@ -35,9 +35,9 @@ const NotFoundScreen = () => (
         title="Report an issue on GitHub"
         desc="If you encounter an issue with this site, do us a favor and report it."
       >
-        <Link withArrow href={siteMetadata.urls.gitHub.frontpage}>
+        {/* <Link withArrow href={siteMetadata.urls.gitHub.frontpage}>
           Report an issue
-        </Link>
+        </Link> */}
       </Feature>
       <Feature
         image={<img src={DiscordSVG} alt="Discord" />}
